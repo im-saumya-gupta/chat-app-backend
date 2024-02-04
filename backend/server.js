@@ -6,7 +6,7 @@ const chatRoutes = require("./routes/chatRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const path = require("path");
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = process.env.BASE_URL ||"http://localhost:3000";
 
 dotenv.config();
 connectDB();
