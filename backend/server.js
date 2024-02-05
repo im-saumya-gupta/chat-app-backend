@@ -44,7 +44,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: ["http://localhost:3000","https://chat-app-backend-jbiv.onrender.com"],
+    origin: "https://chatnest.netlify.app/",
     // credentials: true,
   },
 });
